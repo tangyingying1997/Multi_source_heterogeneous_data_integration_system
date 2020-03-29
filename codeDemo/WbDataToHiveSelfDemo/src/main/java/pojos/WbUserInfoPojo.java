@@ -1,6 +1,10 @@
 package pojos;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+
+import utils.StringUtil;
 
 public class WbUserInfoPojo {
 	private long id;
@@ -25,6 +29,32 @@ public class WbUserInfoPojo {
 		super();
 	}
 	
+	
+	public String toString4FileOutput() {
+		List<Object> fieldList = new ArrayList<>();
+		fieldList.add(id);
+		fieldList.add(screenName);
+		fieldList.add(province);
+		fieldList.add(remark);
+		
+		return StringUtil.join(fieldList, "\001");
+	}
+	
+	public String toString4FileOutputTeacher() {
+		return this.id+"\001"+this.screenName+"\001"+this.province+"\001"+this.remark;
+	}
+
+
+	@Override
+	public String toString() {
+		return "WbUserInfoPojo [id=" + id + ", screenName=" + screenName + ", name=" + name + ", province=" + province
+				+ ", city=" + city + ", location=" + location + ", description=" + description + ", userDomain="
+				+ userDomain + ", gender=" + gender + ", followersCount=" + followersCount + ", friendsCount="
+				+ friendsCount + ", statusesCount=" + statusesCount + ", favouritesCount=" + favouritesCount
+				+ ", createdAt=" + createdAt + ", verified=" + verified + ", remark=" + remark + ", verifiedReason="
+				+ verifiedReason + "]";
+	}
+
 	public long getId() {
 		return id;
 	}

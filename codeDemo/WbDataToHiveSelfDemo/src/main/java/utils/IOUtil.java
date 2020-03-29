@@ -1,6 +1,6 @@
 package utils;
 /**
- * �����ļ����ƣ���ȡ�����ļ��е�����
+ * 从指定文件中读出全部内容
  * @author Apollo
  *
  */
@@ -15,32 +15,32 @@ import java.util.List;
 
 public class IOUtil {
 	/**
-	 * �����ļ�������ȡ���ļ�����
+	 * 从指定文件中读出全部内容
 	 * @param args
 	 */
 	public static List<String> getTxtContent(String txtFilePath,String charset)
 		throws Exception {
-		//1.�½�File�ඨλ�ļ�λ��
+		//1.创建File对象定位文件路径
 		File txtFile = new File(txtFilePath);
-		//2.�ļ�������
+		//2.文件输入流
 		FileInputStream fis = new FileInputStream(txtFile);
-		//3.�ַ�������
+		//3.reader
 		InputStreamReader isr = new InputStreamReader(fis,charset);
-		//4.�ֽ���������
+		//4.字符读取
 		BufferedReader br = new BufferedReader(isr);
 		
-		//5.��������
+		//5.创建存储结果的list
 		List<String> lineList = new ArrayList<String>();
 		
-		//6.��
+		//6.读数据
 		String tempLine = null;
 		while((tempLine = br.readLine()) != null){
 			lineList.add(tempLine);
 		}
-		//7.����
+		//7.关流
 		br.close();
 		
-		//8.����
+		//8.返回结果
 		return lineList;
 	}
 	
@@ -67,7 +67,7 @@ public class IOUtil {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception{
-		String txtFilePath = "房地产\\user\\1107717945.txt";
+		String txtFilePath = "房地产\\content\\1107717945.txt";
 		String inputCharset = "utf-8";
 		String outputCharset = "utf-8";
 		String outputFilePath = "newFile.txt";

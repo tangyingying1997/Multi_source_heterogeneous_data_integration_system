@@ -5,41 +5,41 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * ж╦╤╗нд╪Ч╪пё╛урЁЖнд╪Ч╪пжп╣днд╪Ч
+ * ж╦О©╫О©╫О©╫д╪О©╫О©╫пёО©╫О©╫рЁО©╫О©╫д╪О©╫О©╫О©╫О©╫п╣О©╫О©╫д╪О©╫
  * @author Apollo
  *
  */
 public class FileOperatorUtil {
 	/**
-	 * ╦Ы╬щб╥╬╤ё╛урЁЖфДоб╣дкЫспнд╪Ч
+	 * О©╫О©╫О©╫О©╫б╥О©╫О©╫О©╫О©╫О©╫рЁО©╫О©╫О©╫О©╫б╣О©╫О©╫О©╫О©╫О©╫О©╫д╪О©╫
 	 */
 	public static List<String> getAllSubNormalFilePath(String filePath){
-		//1.╢╢╫╗нд╪ЧюЮё╛╤╗н╩╣╫╦цб╥╬╤
+		//1.О©╫О©╫О©╫О©╫О©╫д╪О©╫О©╫Юё╛О©╫О©╫н╩О©╫О©╫О©╫О©╫б╥О©╫О©╫
 		File file = new File(filePath);
-		//2.╢╢╫╗Listсцю╢╢Ф╢╒╠ИюЗЁЖ╣д╫А╧Ш╪╞
+		//2.О©╫О©╫О©╫О©╫ListО©╫О©╫О©╫О©╫О©╫Ф╢╒О©╫О©╫О©╫О©╫О©╫О©╫О©╫д╫О©╫О©╫О©╫О©╫
 		List<String> resultList = new ArrayList();
-		//3.еп╤ойг╥Яйгд©б╪
+		//3.О©╫п╤О©╫О©╫г╥О©╫О©╫О©╫д©б╪
 		if(file.isDirectory()){
-			//апЁЖ╦цд©б╪об╣дх╚╡©нд╪Ч
+			//О©╫пЁО©╫О©╫О©╫д©б╪О©╫б╣О©╫х╚О©╫О©╫О©╫д╪О©╫
 			for(File tempFile : file.listFiles()){
 				resultList.addAll(getAllSubNormalFilePath(tempFile.toString()));
 			}
 		}else{
-			//хГ╧Шйгнд╪Чё╛ж╠╫с╪с╫Ьlist
+			//О©╫О©╫О©╫О©╫О©╫О©╫д╪О©╫О©╫О©╫ж╠О©╫с╪с╫О©╫list
 			resultList.add(file.toString());
 		}
-		//4.╥╣╩ь╫А╧Ш╪╞
+		//4.О©╫О©╫О©╫ь╫О©╫О©╫О©╫О©╫
 		return resultList;
 	}
 	
 	/**
-	 * ╠Юп╢╡Бйт╥╫╥╗
+	 * О©╫О©╫п╢О©╫О©╫О©╫т╥О©╫О©╫О©╫
 	 */
 	public static void main(String[] args){
-		String filePath = "╥©╣ь╡З";
+		String filePath = "Ф┬©Е°╟Д╨╖";
 		List<String> res = getAllSubNormalFilePath(filePath);
-		//╠ИюЗ╢Рс║
-		System.out.println("res╣д╦ЖйЩн╙ё╨"+res.size());
+		//О©╫О©╫О©╫О©╫О©╫О©╫с║
+		System.out.println("resГ └Е╓╖Е╟▐"+res.size());
 		System.out.println("------------------------");
 		for(String temp : res){
 			System.out.println(temp);

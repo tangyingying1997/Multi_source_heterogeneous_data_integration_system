@@ -1,1 +1,1 @@
-User [id=1107717945, screenName=null, name=null, province=0, city=0, location=null, description=null, url=null, profileImageUrl=null, userDomain=null, gender=null, followersCount=0, friendsCount=0, favouritesCount=0, createdAt=null, following=false, verified=false, remark=房地产, lang=null, verifiedReason=null]
+<comment><content>哈哈哈哈</content><time>2012-4-6 4:45:52</time><repostsCount>574</repostsCount><commentsCount>290</commentsCount></comment>
