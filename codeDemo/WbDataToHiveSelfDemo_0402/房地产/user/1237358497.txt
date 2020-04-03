@@ -1,0 +1,1 @@
+User [id=1237358497, screenName=兜兜, name=窦静, province=0, city=0, location=null, description=null, url=null, profileImageUrl=null, userDomain=null, gender=null, followersCount=0, friendsCount=0, statusesCount=0, favouritesCount=0, createdAt=null, following=false, verified=false, remark=房地产, lang=null, verifiedReason=null]

@@ -1,0 +1,1 @@
+User [id=1289628925, screenName=我猜你应该喜欢养乐多, name=杨乐, province=0, city=0, location=null, description=null, url=null, profileImageUrl=null, userDomain=null, gender=null, followersCount=0, friendsCount=0, statusesCount=0, favouritesCount=0, createdAt=null, following=false, verified=false, remark=房地产, lang=null, verifiedReason=null]

@@ -1,0 +1,1 @@
+User [id=1484018951, screenName=暗黑斧子, name=符首尔, province=0, city=0, location=null, description=null, url=null, profileImageUrl=null, userDomain=null, gender=null, followersCount=0, friendsCount=0, statusesCount=0, favouritesCount=0, createdAt=null, following=false, verified=false, remark=房地产, lang=null, verifiedReason=null]

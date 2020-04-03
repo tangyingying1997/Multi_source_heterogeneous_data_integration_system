@@ -1,0 +1,1 @@
+User [id=1227650404, screenName=新不了情孙孙孙, name=孙费, province=0, city=0, location=null, description=null, url=null, profileImageUrl=null, userDomain=null, gender=null, followersCount=0, friendsCount=0, statusesCount=0, favouritesCount=0, createdAt=null, following=false, verified=false, remark=房地产, lang=null, verifiedReason=null]
